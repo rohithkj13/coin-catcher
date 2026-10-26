@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="gold" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff4a3"/>
+      <stop offset="45%" stop-color="#ffc400"/>
+      <stop offset="100%" stop-color="#b57a00"/>
+    </radialGradient>
+    <radialGradient id="inner" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffe680"/>
+      <stop offset="100%" stop-color="#d49000"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#gold)" filter="url(#shadow)" stroke="#8c5e00" stroke-width="2"/>
+  <circle cx="50" cy="50" r="37" fill="url(#inner)" stroke="#ffe066" stroke-width="2"/>
+  <text x="50" y="62" font-size="34" font-family="'Trebuchet MS', -apple-system, sans-serif" font-weight="900" text-anchor="middle" fill="#5c3e00">¢</text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "Coin Catcher",
+  "short_name": "CoinCatcher",
+  "description": "Catch coins and gems, dodge bombs! A fast and fun arcade game.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1026",
+  "theme_color": "#0b1026",
+  "categories": ["games", "arcade"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

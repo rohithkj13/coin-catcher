@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Coin Catcher - Arcade Coin Catching Game</title>
+  <meta name="description" content="Catch coins and gems, dodge bombs! A fast, responsive arcade game playable in any browser on desktop and mobile.">
+  <meta name="theme-color" content="#0b1026">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coin Catcher - Play Online">
+  <meta property="og:description" content="Catch coins and gems, dodge bombs! How high can you score? Play instantly in your browser.">
+  <meta property="og:image" content="favicon.svg">
+
+  <!-- Mobile & PWA Support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Coin Catcher">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" width="480" height="720"></canvas>
+
+  <div id="hud" class="hidden" aria-live="polite">
+    <div>Score <b id="score">0</b></div>
+    <div id="lives" aria-label="Lives">❤❤❤</div>
+    <div>Best <b id="best">0</b></div>
+  </div>
+  <button id="mute" aria-label="Toggle sound" title="Toggle sound">🔊</button>
+
+  <div id="start" class="panel">
+    <h1>Coin<br>Catcher</h1>
+    <p>Catch coins <span class="coin-i">🪙</span> and gems <span>💎</span>.<br>Dodge bombs <span>💣</span>. Missing a coin costs a life!</p>
+    <button id="startBtn" class="btn">Play</button>
+    <small>Controls: ← → / A D / Mouse / Touch Drag</small>
+  </div>
+
+  <div id="over" class="panel hidden">
+    <h2>Game Over</h2>
+    <p>Score <b id="finalScore">0</b></p>
+    <p id="newBest" class="hidden">🏆 New best score!</p>
+    <button id="restartBtn" class="btn">Play Again</button>
+  </div>
+</div>
+
+<script src="logic.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
